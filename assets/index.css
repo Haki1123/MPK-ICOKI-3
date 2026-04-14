@@ -370,6 +370,8 @@ body {
     position: relative;
     z-index: 2;
     padding: 5rem 0;
+    text-align: center;
+    
 }
 
 .section-title {
@@ -381,7 +383,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 2rem;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 .section-subtitle {
@@ -395,9 +397,10 @@ body {
    KABINET SECTION
    ========================================== */
 .kabinet-section {
-    background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
-    border-top: 1px solid rgba(255,255,255,0.05);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
+   background:
+  radial-gradient(circle at 30% 70%, rgba(139,92,246,0.25), transparent 40%),
+  radial-gradient(circle at 80% 20%, rgba(236,72,153,0.2), transparent 40%),
+  linear-gradient(135deg, #020617, #0f172a, #1e1b4b);
 }
 
 .kabinet-logo-container {
@@ -410,7 +413,7 @@ body {
     height: 280px;
     object-fit: contain;
     border-radius: 50%;
-    background: linear-gradient(135deg, #7877c6 0%, #ff77c6 100%);
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #020617);
     box-shadow: 0 0 48px 0 rgba(120,119,198,0.30), 0 8px 32px rgba(255,119,198,0.10);
     padding: 24px;
     animation: logoFloat 3s ease-in-out infinite;
@@ -551,19 +554,7 @@ body {
 /* ==========================================
    DIVISI LOGO (KOMISI)
    ========================================== */
-.divisi-logo {
-    width: 180px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 100%;
-    background: linear-gradient(5deg, #000000 0%, #1c54e0 100%);
-    box-shadow: 0 0 48px 0 rgba(120,119,198,0.30), 0 8px 32px rgba(255,119,198,0.10);
-    padding: 24px;
-    margin-bottom: 1rem;
-    animation: logoFloat 3s ease-in-out infinite;
-    transition: transform 0.9s;
-    transform: scale(2.0);
-}
+
 
 .divisi-logo:hover {
     transform: scale(1.08) rotate(3deg);
@@ -572,11 +563,11 @@ body {
 /* ✅ BPH LOGO - DIPERBESAR & DITURUNKAN */
 #divisi1 .divisi-logo {
     width: 220px;
-    height: 220px;
-    margin-bottom: 2.5rem;
+    height: 150px;
+    margin-bottom: 0%;
     object-fit: fill;
-    transform: scale(2.0); 
-     object-position: center !important; 
+    transform: scale(1.7); 
+    object-position: center 20% !important; 
   object-fit: cover !important;
 
 }
@@ -604,6 +595,7 @@ body {
 #divisi5 .divisi-logo {
     width: 210px;
     height: 210px;
+     transform: scale(1.4); 
 }
 
 .divisi-title {
@@ -643,7 +635,7 @@ body {
     background: rgba(255,255,255,0.04);
     border-radius: 1rem;
     padding: 22px 18px 14px 18px;
-    margin: 0 6px;
+    margin: 0 2px;
     box-shadow: 0 2px 12px rgba(120,119,198,0.07);
     display: flex;
     flex-direction: column;
@@ -671,7 +663,7 @@ body {
     transition: transform 0.2s;
 }
 .anggota-img-wide-rf {
-    width: 130px;
+  width: 130px;
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
@@ -680,13 +672,64 @@ body {
     background: #222;
     margin-bottom: 10px;
     transition: transform 0.2s;
-     display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    object-position: 90% 20%;
-    transform: scale(0.9);
-}.anggota-img-wide-oz {
-    width: 130px;
+    object-position: 30% 20%;
+
+   
+}
+.img-wrapper{
+  width:130px;
+  height:130px;
+  border-radius:50%;
+  overflow:hidden;
+  margin:auto;
+   border:3px solid #fff;
+
+}
+.anggota-img-wide-ja{
+  width:130px;
+  height:130px;
+  object-fit: cover;
+  object-position: 30% 50%;
+
+  border-radius:50%;
+  border:3px solid #fff;
+
+  box-shadow:0 2px 12px rgba(120,119,198,0.13);
+  background:#222;
+
+  margin-bottom:10px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+  transform: scale(1.25); /* zoom gambar */
+  transition: transform 0.2s;
+}
+.anggota-img-wide-gz{
+  width:130px;
+  height:130px;
+  object-fit: cover;
+  object-position: 30% 50%;
+
+  border-radius:50%;
+  border:3px solid #fff;
+
+  box-shadow:0 2px 12px rgba(120,119,198,0.13);
+  background:#222;
+
+  margin-bottom:10px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+  transform: scale(1.25); /* zoom gambar */
+  transition: transform 0.2s;
+}
+.anggota-img-wide-oz {
+     width: 130px;
     height: 130px;
     object-fit: cover;
     border-radius: 50%;
@@ -695,11 +738,11 @@ body {
     background: #222;
     margin-bottom: 10px;
     transition: transform 0.2s;
-     display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    object-position: 90% 20%;
-    transform: scale(0.9);
+    object-position: 30% 20%;
+
 }
 .anggota-img-wide-rh{
     width: 130px;
@@ -715,7 +758,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     object-position: center 20%;
-    transform: scale(1);
+   
 }
 .anggota-img-wide-rz {
     width: 130px;
@@ -731,7 +774,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     object-position: center 20%;
-    transform: scale(1);
+   
 }
 .anggota-img-wide-zayd {
     width: 130px;
@@ -890,7 +933,7 @@ body {
 }
 
 .social-link:hover {
-    color: #ff77c6;
+    color: #fa4cb1;
     transform: scale(1.2) rotate(-8deg);
 }
 
